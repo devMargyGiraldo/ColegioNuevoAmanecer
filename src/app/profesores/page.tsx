@@ -4,7 +4,6 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import {
   Search,
-  User,
   Calendar,
   Book,
   Award,
@@ -61,12 +60,7 @@ import {
   SelectItem,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  createTeacher,
-  deleteTeacher,
-  updateStudent,
-  updateTeacher,
-} from "@/actions";
+import { createTeacher, deleteTeacher, updateTeacher } from "@/actions";
 import { toast } from "sonner";
 
 export default function TeacherPage() {

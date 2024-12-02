@@ -31,6 +31,7 @@ export const createStudent = async (data: Omit<StudentType, "studentId">) => {
       success: "Estudiante creada exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error creando estudiante",
     };
@@ -54,6 +55,7 @@ export const updateStudent = async (data: StudentType) => {
       success: "Estudiante actualizado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando estudiante",
     };
@@ -72,6 +74,7 @@ export const deleteStudent = async (id: number) => {
       success: "Estudiante eliminado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando estudiante",
     };
@@ -130,6 +133,7 @@ export const updateTeacher = async (data: TeacherType) => {
       success: "Profesor actualizado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando profesor",
     };
@@ -148,6 +152,7 @@ export const deleteTeacher = async (id: number) => {
       success: "Profesor eliminado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando profesor",
     };
@@ -206,6 +211,7 @@ export const updateSubject = async (data: SubjectType) => {
       success: "Asignatura actualizada exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando asignatura",
     };
@@ -224,6 +230,7 @@ export const deleteSubject = async (id: number) => {
       success: "Asignatura eliminada exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando asignatura",
     };
@@ -282,6 +289,7 @@ export const updateGrade = async (data: GradeType) => {
       success: "Grado actualizado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando grado",
     };
@@ -300,6 +308,7 @@ export const deleteGrade = async (id: number) => {
       success: "Grado eliminado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando grado",
     };
@@ -358,6 +367,7 @@ export const updatePeriod = async (data: PeriodType) => {
       success: "Periodo actualizado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando periodo",
     };
@@ -376,6 +386,7 @@ export const deletePeriod = async (id: number) => {
       success: "Periodo eliminado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando periodo",
     };
@@ -436,6 +447,7 @@ export const updateAchievement = async (data: AchievementType) => {
       success: "Logro actualizado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando logro",
     };
@@ -454,6 +466,7 @@ export const deleteAchievement = async (id: number) => {
       success: "Logro eliminado exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando logro",
     };
@@ -512,6 +525,7 @@ export const updateScore = async (data: ScoreType) => {
       success: "Calificación actualizada exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error actualizando calificación",
     };
@@ -530,6 +544,7 @@ export const deleteScore = async (id: number) => {
       success: "Calificación eliminada exitosamente",
     };
   } catch (error) {
+    console.log(error);
     return {
       error: "Error eliminando calificación",
     };

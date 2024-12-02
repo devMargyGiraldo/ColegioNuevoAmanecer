@@ -7,7 +7,6 @@ import {
   User,
   Calendar,
   Book,
-  Award,
   Pencil,
   Trash2,
   Plus,
@@ -39,7 +38,6 @@ import {
   DialogTrigger,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Label } from "@/components/ui/label";
 import {
@@ -100,10 +98,6 @@ export default function StudentPage({}) {
       console.error(error);
       toast.error("Error al cargar los datos");
     }
-  };
-
-  const reloadTable = async () => {
-    await fetchStudents(); // Obtiene datos actualizados de la API
   };
 
   // Función para obtener los grados desde la API

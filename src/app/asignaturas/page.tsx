@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { Search, Book, Pencil, Trash2, Plus } from "lucide-react";
+import { Search, Pencil, Trash2, Plus } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,12 +42,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import {
-  createSubject,
-  deleteSubject,
-  updateStudent,
-  updateSubject,
-} from "@/actions";
+import { createSubject, deleteSubject, updateSubject } from "@/actions";
 import { toast } from "sonner";
 
 interface SubjectType {
